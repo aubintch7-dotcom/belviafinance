@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belvia Finance — Crédit &amp; Financement Européen | Siège à Paris, France</title>
+  <meta name="description" content="Belvia Finance, institution européenne de prêt et financement basée à Paris, France. Prêt personnel, immobilier, auto, professionnel et rachat de crédits au taux fixe de 3 % TAEG dans les 24 langues de l'Union Européenne." />
+
+  <!-- Polices éditoriales (chargement progressif non-bloquant avec fallback système immédiat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Feuille de style principale Belvia Finance -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Conteneur invisible de synchronisation Google Translate automatique -->
+  <div id="google_translate_element" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       1. BANDEAU SUPÉRIEUR INSTITUTIONNEL FRANCE & UNION EUROPÉENNE
+       ===================================================================== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-item">
+        <span class="flag-badge fr-pill notranslate">FR</span>
+        <span class="flag-badge eu-pill notranslate">UE 27</span>
+        <span data-i18n="topbar_hq">Siège social : 88 Avenue Kléber, Paris (France) · Service dans les 27 pays de l'UE</span>
+      </div>
+      <div class="topbar-item topbar-legal">
+        <span data-i18n="topbar_legal">Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       2. EN-TÊTE STICKY & SÉLECTEUR DES 24 LANGUES DE L'UNION EUROPÉENNE
+       ===================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="Belvia Finance Accueil">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 20H20M6 17V9M10 17V9M14 17V9M18 17V9M3 9L12 3L21 9H3Z" stroke="#DFB867" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap notranslate">
+          <span class="brand-name">BELVIA <span>FINANCE</span></span>
+          <span class="brand-sub">Paris · Union Européenne</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#credits" data-i18n="nav_solutions">Nos Crédits</a>
+        <a href="#simulateur" data-i18n="nav_simulator">Simulateur</a>
+        <a href="#etapes" data-i18n="nav_process">Étapes</a>
+        <a href="#siege-france" data-i18n="nav_about">Siège en France</a>
+        <a href="#temoignages" data-i18n="nav_reviews">Témoignages</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Bouton Sélecteur 24 Langues Officielles de l'UE -->
+        <button type="button" class="lang-switcher-btn" id="openLangModalBtn" title="24 Langues Officielles de l'Union Européenne">
+          <span class="lang-iso-pill notranslate" id="activeLangIso">FR</span>
+          <span class="notranslate" id="activeLangName">Français</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+
+        <!-- Bouton CTA Principal : Demander un crédit -->
+        <a href="#demander-credit" class="btn btn-primary">
+          <span data-i18n="btn_apply_credit">Demander un crédit</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile Responsive -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <a href="#credits" data-i18n="nav_solutions">Nos Crédits</a>
+      <a href="#simulateur" data-i18n="nav_simulator">Simulateur</a>
+      <a href="#etapes" data-i18n="nav_process">Étapes</a>
+      <a href="#siege-france" data-i18n="nav_about">Siège en France</a>
+      <a href="#temoignages" data-i18n="nav_reviews">Témoignages</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#demander-credit" class="btn btn-primary" style="text-align:center;color:#fff;border:none;" data-i18n="btn_apply_credit">Demander un crédit</a>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       3. HERO SECTION — PRESTIGE FINANCIER PARISIEN & EUROPÉEN
+       ===================================================================== -->
+  <section class="hero-section">
+    <div class="hero-bg-pattern"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="flag-badge fr-pill notranslate">PARIS</span>
+          <span data-i18n="hero_badge">Institution Européenne de Crédit · Siège à Paris, France</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="hero_title">
+          Financez vos projets en toute confiance partout en Europe.
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Belvia Finance accompagne particuliers et entreprises dans toute l'Union Européenne avec des taux fixes transparents au taux fixe de 3 % TAEG, une réponse sous 24h et zéro frais cachés.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#demander-credit" class="btn btn-primary btn-lg">
+            <span data-i18n="btn_apply_credit">Demander un crédit</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#simulateur" class="btn btn-outline btn-lg" data-i18n="hero_cta_secondary">
+            Simuler ma mensualité
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-box">
+            <strong>3 %</strong>
+            <span data-i18n="stat_rate_lbl">TAEG annuel fixe dès</span>
+          </div>
+          <div class="stat-box">
+            <strong>24h – 48h</strong>
+            <span data-i18n="stat_time_lbl">Accord &amp; virement SEPA</span>
+          </div>
+          <div class="stat-box">
+            <strong>98,4 %</strong>
+            <span data-i18n="stat_clients_lbl">Clients satisfaits en UE</span>
+          </div>
+          <div class="stat-box">
+            <strong data-i18n="stat_countries_val">24 Langues</strong>
+            <span data-i18n="stat_countries_lbl">Union Européenne entière</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img src="assets/images/hero-finance.jpg" alt="Conseiller Belvia Finance à Paris accompagnant un couple européen" />
+          <div class="hero-rating-pill">
+            <span class="stars-gold">★★★★★</span>
+            <span>4,9 / 5 · 2 840+ Avis UE</span>
+          </div>
+        </div>
+
+        <div class="hero-float-card">
+          <div class="float-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <div>
+            <strong data-i18n="hero_float_verified">Siège social enregistré à Paris, France</strong>
+            <span data-i18n="hero_float_sub">Contrat européen conforme RGPD &amp; eIDAS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. BANDEAU TEMPS RÉEL D'ACCORDS VÉRIFIÉS À TRAVERS L'EUROPE
+       ===================================================================== -->
+  <div class="live-ticker-bar" aria-label="Derniers financements accordés en Europe">
+    <div class="ticker-track">
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Lyon (FR)</strong> · Crédit Immobilier 185 000 € approuvé</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Madrid (ES)</strong> · Prêt Personnel 24 000 € viré par SEPA</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>München (DE)</strong> · Prêt PME 95 000 € accordé en 24h</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Bruxelles (BE)</strong> · Rachat de Crédits 54 000 € (-46 %/mois)</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Milano (IT)</strong> · Prêt Personnel 18 500 € signé eIDAS</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Porto (PT)</strong> · Crédit Auto 31 000 € débloqué en 48h</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Warszawa (PL)</strong> · Prêt Travaux 33 000 € validé</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Athènes (GR)</strong> · Rénovation 46 000 € viré sur IBAN</div>
+      <!-- Duplication fluide pour défilement infini continu -->
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Lyon (FR)</strong> · Crédit Immobilier 185 000 € approuvé</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Madrid (ES)</strong> · Prêt Personnel 24 000 € viré par SEPA</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>München (DE)</strong> · Prêt PME 95 000 € accordé en 24h</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Bruxelles (BE)</strong> · Rachat de Crédits 54 000 € (-46 %/mois)</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Milano (IT)</strong> · Prêt Personnel 18 500 € signé eIDAS</div>
+      <div class="ticker-item"><span class="ticker-dot"></span> <strong>Porto (PT)</strong> · Crédit Auto 31 000 € débloqué en 48h</div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       5. NOS 6 SOLUTIONS DE PRÊT & CRÉDIT EUROPÉEN
+       ===================================================================== -->
+  <section class="section" id="credits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="sec_loans_tag">NOS SOLUTIONS DE FINANCEMENT</span>
+        <h2 class="section-title" data-i18n="sec_loans_title">Des prêts adaptés à chaque étape de votre vie</h2>
+        <p class="section-sub" data-i18n="sec_loans_sub">
+          Profitez de conditions françaises avantageuses, d'échéances fixes et d'un conseiller dédié parlant votre langue.
+        </p>
+      </div>
+
+      <div class="loans-grid">
+        <!-- Carte 1 : Prêt Personnel -->
+        <article class="loan-card">
+          <div class="loan-card-media">
+            <img src="assets/images/loan-personnel.jpg" alt="Prêt Personnel Belvia Finance" loading="lazy" />
+            <span class="loan-rate-badge"><span data-i18n="card_rate_from">TAEG fixe dès</span> <strong>3 %</strong></span>
+          </div>
+          <div class="loan-card-body">
+            <h3 data-i18n="loan_personnel_title">Prêt Personnel</h3>
+            <p data-i18n="loan_personnel_desc">Voyage, mariage, études, événement familial ou trésorerie libre : financez vos besoins personnels sans justificatif d'achat.</p>
+            <div class="loan-card-actions">
+              <button type="button" class="btn btn-outline-dark" data-simulate-loan="personnel" data-i18n="card_simulate_btn">Simuler ce prêt</button>
+              <button type="button" class="btn btn-primary" data-apply-loan="personnel" data-i18n="btn_apply_credit">Demander un crédit</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 2 : Crédit Immobilier -->
+        <article class="loan-card">
+          <div class="loan-card-media">
+            <img src="assets/images/loan-immobilier.jpg" alt="Crédit Immobilier Belvia Finance" loading="lazy" />
+            <span class="loan-rate-badge"><span data-i18n="card_rate_from">TAEG fixe dès</span> <strong>3 %</strong></span>
+          </div>
+          <div class="loan-card-body">
+            <h3 data-i18n="loan_immobilier_title">Crédit Immobilier</h3>
+            <p data-i18n="loan_immobilier_desc">Acquisition d'une résidence principale, secondaire ou investissement locatif en France et dans les pays de l'Union Européenne.</p>
+            <div class="loan-card-actions">
+              <button type="button" class="btn btn-outline-dark" data-simulate-loan="immobilier" data-i18n="card_simulate_btn">Simuler ce prêt</button>
+              <button type="button" class="btn btn-primary" data-apply-loan="immobilier" data-i18n="btn_apply_credit">Demander un crédit</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 3 : Crédit Auto & Éco-Mobilité -->
+        <article class="loan-card">
+          <div class="loan-card-media">
+            <img src="assets/images/loan-auto.jpg" alt="Crédit Auto Belvia Finance" loading="lazy" />
+            <span class="loan-rate-badge"><span data-i18n="card_rate_from">TAEG fixe dès</span> <strong>3 %</strong></span>
+          </div>
+          <div class="loan-card-body">
+            <h3 data-i18n="loan_auto_title">Crédit Auto &amp; Éco-Mobilité</h3>
+            <p data-i18n="loan_auto_desc">Financez votre voiture neuve, d'occasion, électrique ou hybride à taux préférentiel avec déblocage intégral en 48h.</p>
+            <div class="loan-card-actions">
+              <button type="button" class="btn btn-outline-dark" data-simulate-loan="auto" data-i18n="card_simulate_btn">Simuler ce prêt</button>
+              <button type="button" class="btn btn-primary" data-apply-loan="auto" data-i18n="btn_apply_credit">Demander un crédit</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 4 : Prêt Professionnel & PME -->
+        <article class="loan-card">
+          <div class="loan-card-media">
+            <img src="assets/images/loan-business.jpg" alt="Prêt Professionnel PME Belvia Finance" loading="lazy" />
+            <span class="loan-rate-badge"><span data-i18n="card_rate_from">TAEG fixe dès</span> <strong>3 %</strong></span>
+          </div>
+          <div class="loan-card-body">
+            <h3 data-i18n="loan_pro_title">Prêt Professionnel &amp; PME</h3>
+            <p data-i18n="loan_pro_desc">Création d'activité, équipement industriel, flotte commerciale ou trésorerie d'entreprise pour accélérer votre croissance.</p>
+            <div class="loan-card-actions">
+              <button type="button" class="btn btn-outline-dark" data-simulate-loan="professionnel" data-i18n="card_simulate_btn">Simuler ce prêt</button>
+              <button type="button" class="btn btn-primary" data-apply-loan="professionnel" data-i18n="btn_apply_credit">Demander un crédit</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 5 : Rachat de Crédits -->
+        <article class="loan-card">
+          <div class="loan-card-media">
+            <img src="assets/images/loan-rachat.jpg" alt="Rachat de Crédits Belvia Finance" loading="lazy" />
+            <span class="loan-rate-badge"><span data-i18n="card_rate_from">TAEG fixe dès</span> <strong>3 %</strong></span>
+          </div>
+          <div class="loan-card-body">
+            <h3 data-i18n="loan_rachat_title">Rachat de Crédits</h3>
+            <p data-i18n="loan_rachat_desc">Regroupez tous vos crédits en une seule mensualité allégée jusqu'à -60 % et simplifiez durablement votre budget mensuel.</p>
+            <div class="loan-card-actions">
+              <button type="button" class="btn btn-outline-dark" data-simulate-loan="rachat" data-i18n="card_simulate_btn">Simuler ce prêt</button>
+              <button type="button" class="btn btn-primary" data-apply-loan="rachat" data-i18n="btn_apply_credit">Demander un crédit</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 6 : Prêt Travaux & Énergie -->
+        <article class="loan-card">
+          <div class="loan-card-media">
+            <img src="assets/images/loan-travaux.jpg" alt="Prêt Travaux & Rénovation Énergétique Belvia Finance" loading="lazy" />
+            <span class="loan-rate-badge"><span data-i18n="card_rate_from">TAEG fixe dès</span> <strong>3 %</strong></span>
+          </div>
+          <div class="loan-card-body">
+            <h3 data-i18n="loan_travaux_title">Prêt Travaux &amp; Énergie</h3>
+            <p data-i18n="loan_travaux_desc">Rénovation intérieure, isolation thermique, pompe à chaleur ou panneaux solaires : valorisez votre bien au meilleur taux.</p>
+            <div class="loan-card-actions">
+              <button type="button" class="btn btn-outline-dark" data-simulate-loan="travaux" data-i18n="card_simulate_btn">Simuler ce prêt</button>
+              <button type="button" class="btn btn-primary" data-apply-loan="travaux" data-i18n="btn_apply_credit">Demander un crédit</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. SIMULATEUR INTERACTIF EN TEMPS RÉEL
+       ===================================================================== -->
+  <section class="section section-white" id="simulateur">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="sim_tag">SIMULATEUR OFFICIEL BELVIA</span>
+        <h2 class="section-title" data-i18n="sim_title">Simulez votre crédit en temps réel</h2>
+        <p class="section-sub" data-i18n="sim_sub">
+          Ajustez librement le montant et la durée : vos mensualités sont fixes, claires et sans aucun frais de dossier caché.
+        </p>
+      </div>
+
+      <div class="simulator-wrapper">
+        <div class="simulator-controls">
+          <label class="slider-label" data-i18n="sim_type_label">Nature de votre projet</label>
+          <div class="loan-type-pills">
+            <button type="button" class="type-pill active" data-loan-type="personnel" data-i18n="loan_personnel_title">Prêt Personnel</button>
+            <button type="button" class="type-pill" data-loan-type="immobilier" data-i18n="loan_immobilier_title">Crédit Immobilier</button>
+            <button type="button" class="type-pill" data-loan-type="auto" data-i18n="loan_auto_title">Crédit Auto</button>
+            <button type="button" class="type-pill" data-loan-type="professionnel" data-i18n="loan_pro_title">Prêt Professionnel</button>
+            <button type="button" class="type-pill" data-loan-type="rachat" data-i18n="loan_rachat_title">Rachat de Crédits</button>
+            <button type="button" class="type-pill" data-loan-type="travaux" data-i18n="loan_travaux_title">Prêt Travaux</button>
+          </div>
+
+          <!-- Slider Montant -->
+          <div class="slider-group">
+            <div class="slider-header">
+              <label for="simAmountRange" class="slider-label" data-i18n="sim_amount_label">Montant à emprunter</label>
+              <div class="slider-input-box">
+                <input type="number" id="simAmountInput" min="2000" max="500000" step="500" value="18000" aria-label="Montant en euros" />
+                <span>€</span>
+              </div>
+            </div>
+            <input type="range" id="simAmountRange" min="2000" max="500000" step="500" value="18000" />
+            <div class="slider-minmax">
+              <span>2 000 €</span>
+              <span>100 000 €</span>
+              <span>250 000 €</span>
+              <span>500 000 €</span>
+            </div>
+          </div>
+
+          <!-- Slider Durée -->
+          <div class="slider-group" style="margin-bottom:0;">
+            <div class="slider-header">
+              <div>
+                <label for="simMonthsRange" class="slider-label" data-i18n="sim_duration_label">Durée de remboursement</label>
+                <small id="simYearsHint" style="margin-left:6px;color:var(--text-muted);font-weight:700;">(5 ans)</small>
+              </div>
+              <div class="slider-input-box">
+                <input type="number" id="simMonthsInput" min="6" max="240" step="6" value="60" aria-label="Durée en mois" style="width:76px;" />
+                <span data-i18n="sim_months_unit">mois</span>
+              </div>
+            </div>
+            <input type="range" id="simMonthsRange" min="6" max="240" step="6" value="60" />
+            <div class="slider-minmax">
+              <span>6 <span data-i18n="sim_months_unit">mois</span></span>
+              <span>60 <span data-i18n="sim_months_unit">mois</span></span>
+              <span>120 <span data-i18n="sim_months_unit">mois</span></span>
+              <span>240 <span data-i18n="sim_months_unit">mois</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Résultat en temps réel -->
+        <div class="simulator-result">
+          <div>
+            <div class="monthly-highlight">
+              <div class="monthly-label" data-i18n="sim_monthly_label">Votre mensualité fixe estimée</div>
+              <div class="monthly-amount-row">
+                <span class="monthly-big" id="resMonthly">323,44 €</span>
+                <span class="monthly-unit" data-i18n="sim_per_month">/ mois</span>
+              </div>
+            </div>
+
+            <div class="capital-bar-wrap">
+              <div class="capital-bar">
+                <div class="capital-bar-principal" id="barPrincipal" style="width:94%;"></div>
+                <div class="capital-bar-interest" id="barInterest" style="width:6%;"></div>
+              </div>
+            </div>
+
+            <div class="summary-rows">
+              <div class="summary-row">
+                <span data-i18n="sim_taeg_label">TAEG Fixe Annuel</span>
+                <strong id="resTaeg" style="color:var(--gold-400);">3,0 %</strong>
+              </div>
+              <div class="summary-row">
+                <span data-i18n="sim_borrowed_label">Capital emprunté</span>
+                <strong id="resPrincipal">18 000 €</strong>
+              </div>
+              <div class="summary-row">
+                <span data-i18n="sim_interest_label">Coût des intérêts</span>
+                <strong id="resInterest">1 406 €</strong>
+              </div>
+              <div class="summary-row" style="border-bottom:none;">
+                <span data-i18n="sim_total_label">Montant total remboursé</span>
+                <strong id="resTotal">19 406 €</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-cta-stack">
+            <a href="#demander-credit" class="btn btn-primary btn-lg" style="width:100%;" data-i18n="sim_apply_with_btn">
+              Demander un crédit avec cette simulation
+            </a>
+            <button type="button" class="btn btn-outline" id="openAmortModalBtn" style="width:100%;font-size:0.84rem;" data-i18n="sim_amort_btn">
+              Afficher l'échéancier d'amortissement
+            </button>
+            <p class="sim-note" data-i18n="sim_guarantee_note">
+              Simulation 100 % gratuite et sans engagement · Aucun impact sur votre score bancaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. PARCOURS EN 4 ÉTAPES SIMPLES
+       ===================================================================== -->
+  <section class="section" id="etapes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="proc_tag">PROCÉDURE SIMPLE &amp; SÉCURISÉE</span>
+        <h2 class="section-title" data-i18n="proc_title">Votre financement débloqué en 4 étapes claires</h2>
+        <p class="section-sub" data-i18n="proc_sub">
+          Un parcours numérique fluide piloté depuis notre direction financière à Paris.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3 data-i18n="step1_title">1. Demande rapide en ligne</h3>
+          <p data-i18n="step1_desc">Simulez votre prêt et envoyez votre demande en 3 minutes avec le bouton « Demander un crédit ».</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3 data-i18n="step2_title">2. Analyse sous 24 heures</h3>
+          <p data-i18n="step2_desc">Un analyste financier Belvia Finance étudie votre dossier et vous envoie votre proposition personnalisée par e-mail.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3 data-i18n="step3_title">3. Signature électronique eIDAS</h3>
+          <p data-i18n="step3_desc">Après lecture attentive de votre offre préalable légale, signez électroniquement votre contrat en toute sécurité.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h3 data-i18n="step4_title">4. Virement SEPA en 48 heures</h3>
+          <p data-i18n="step4_desc">Les fonds sont transférés directement sur votre compte IBAN européen sans frais cachés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. NOTRE SIÈGE EN FRANCE — 88 AVENUE KLÉBER, PARIS 16e
+       ===================================================================== -->
+  <section class="section section-white" id="siege-france">
+    <div class="container hq-grid">
+      <div class="hq-image-card">
+        <img src="assets/images/paris-hq.jpg" alt="Siège social Belvia Finance — Paris, France" loading="lazy" />
+        <div class="hq-address-overlay">
+          <div>
+            <strong style="display:block;font-size:0.98rem;color:var(--gold-400);">Belvia Finance — Direction Générale</strong>
+            <span style="font-size:0.84rem;" data-inst="address">88 Avenue Kléber, 75116 Paris, France</span>
+          </div>
+          <span class="flag-badge fr-pill notranslate">FRANCE</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="section-tag" data-i18n="hq_tag">SIÈGE SOCIAL À PARIS, FRANCE</span>
+        <h2 class="section-title" data-i18n="hq_title">La rigueur financière française au service de toute l'Europe</h2>
+        <p style="font-size:1rem;color:var(--text-body);" data-i18n="hq_desc">
+          Implantée au cœur du 16e arrondissement de Paris (88 Avenue Kléber), Belvia Finance place l'éthique, la transparence tarifaire et la proximité humaine au centre de chaque financement accordé en Europe.
+        </p>
+
+        <ul class="hq-check-list">
+          <li>
+            <span class="check-badge">✓</span>
+            <span data-i18n="hq_point1">Taux d'intérêt 100 % fixe et garanti sur toute la durée du prêt</span>
+          </li>
+          <li>
+            <span class="check-badge">✓</span>
+            <span data-i18n="hq_point2">Remboursement anticipé gratuit et report d'échéance modulable</span>
+          </li>
+          <li>
+            <span class="check-badge">✓</span>
+            <span data-i18n="hq_point3">Virements SEPA rapides vers les 27 États membres de l'Union Européenne</span>
+          </li>
+          <li>
+            <span class="check-badge">✓</span>
+            <span data-i18n="hq_point4">Confidentialité bancaire stricte conforme au règlement RGPD européen</span>
+          </li>
+        </ul>
+
+        <a href="#demander-credit" class="btn btn-navy btn-lg" data-i18n="btn_apply_credit">Demander un crédit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. MUR MASSIF DE 24+ TÉMOIGNAGES CLIENTS EUROPÉENS VÉRIFIÉS
+       ===================================================================== -->
+  <section class="section" id="temoignages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="rev_tag">TÉMOIGNAGES VÉRIFIÉS À TRAVERS L'EUROPE</span>
+        <h2 class="section-title" data-i18n="rev_title">Ils ont réalisé leur projet grâce à Belvia Finance</h2>
+        <p class="section-sub" data-i18n="rev_sub">
+          Plus de 28 400 familles, indépendants et dirigeants nous font confiance en France et dans toute l'Union Européenne. Note moyenne certifiée : 4,9 / 5.
+        </p>
+      </div>
+
+      <!-- Barre globale de confiance & score -->
+      <div class="reviews-trust-banner">
+        <div class="trust-score-big">
+          <div class="score-number">4,9</div>
+          <div>
+            <div class="stars-gold" style="font-size:1.25rem;">★★★★★</div>
+            <div style="font-size:0.86rem;color:rgba(255,255,255,0.8);">Basé sur <strong>2 847 avis clients certifiés</strong> (France &amp; UE)</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button type="button" class="btn btn-outline" id="openAddReviewModalBtn" data-i18n="rev_add_btn">Laisser mon avis client</button>
+          <a href="#demander-credit" class="btn btn-primary" data-i18n="btn_apply_credit">Demander un crédit</a>
+        </div>
+      </div>
+
+      <!-- Filtres par type de prêt -->
+      <div class="review-filters">
+        <button type="button" class="filter-chip active" data-review-filter="all" data-i18n="filter_all">Tous les avis (24)</button>
+        <button type="button" class="filter-chip" data-review-filter="immobilier" data-i18n="loan_immobilier_title">Crédit Immobilier</button>
+        <button type="button" class="filter-chip" data-review-filter="personnel" data-i18n="loan_personnel_title">Prêt Personnel</button>
+        <button type="button" class="filter-chip" data-review-filter="auto" data-i18n="loan_auto_title">Crédit Auto</button>
+        <button type="button" class="filter-chip" data-review-filter="professionnel" data-i18n="loan_pro_title">Prêt Professionnel</button>
+        <button type="button" class="filter-chip" data-review-filter="rachat" data-i18n="loan_rachat_title">Rachat de Crédits</button>
+        <button type="button" class="filter-chip" data-review-filter="travaux" data-i18n="loan_travaux_title">Prêt Travaux</button>
+      </div>
+
+      <!-- Grille dynamique des témoignages -->
+      <div class="reviews-grid" id="reviewsGrid"></div>
+
+      <div class="reviews-more-bar">
+        <button type="button" class="btn btn-navy btn-lg" id="toggleAllReviewsBtn" data-i18n="rev_load_more">
+          Voir les 24 témoignages clients
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. FORMULAIRE DE DEMANDE DE CRÉDIT — ENVOI E-MAIL VIA WEB3FORMS
+       ===================================================================== -->
+  <section class="section application-section" id="demander-credit">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="form_tag">DOSSIER EN LIGNE SÉCURISÉ</span>
+        <h2 class="section-title" data-i18n="form_title">Demander un crédit chez Belvia Finance</h2>
+        <p class="section-sub" data-i18n="form_sub">
+          Remplissez soigneusement ce formulaire. Votre dossier est transmis instantanément par courriel sécurisé à notre bureau d'étude à Paris — réponse garantie sous 24h.
+        </p>
+      </div>
+
+      <div class="form-container-card">
+        <!-- Récapitulatif synchronisé avec le simulateur -->
+        <div class="form-sim-recap">
+          <div style="font-size:0.9rem;color:var(--navy-900);">
+            <span>Simulation active : </span>
+            <span id="formRecapSummary"><strong>18 000 €</strong> · <strong>60 mois</strong> · <strong>323,44 € / mois (TAEG fixe 3 %)</strong></span>
+          </div>
+          <a href="#simulateur" style="font-size:0.82rem;font-weight:800;color:var(--eu-blue);text-decoration:underline;" data-i18n="nav_simulator">Modifier dans le simulateur</a>
+        </div>
+
+        <!-- ================================================================
+             FORMULAIRE WEB3FORMS OFFICIEL (https://api.web3forms.com/submit)
+             👉 Vous pouvez coller votre clé Web3Forms ici OU dans js/config.js !
+             ================================================================ -->
+        <form id="belviaCreditForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" id="web3formsAccessKeyInput" value="VOTRE_CLE_WEB3FORMS_ICI" />
+          <input type="hidden" name="Mensualite_Estimee" id="hiddenMonthlyEstimate" value="" />
+          <input type="hidden" name="Taux_TAEG" id="hiddenTaegRate" value="" />
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" />
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="formLoanType" data-i18n="f_loan_type">Type de crédit souhaité *</label>
+              <select id="formLoanType" name="Type_Credit" class="form-control" required>
+                <option value="personnel">Prêt Personnel</option>
+                <option value="immobilier">Crédit Immobilier</option>
+                <option value="auto">Crédit Auto &amp; Éco-Mobilité</option>
+                <option value="professionnel">Prêt Professionnel &amp; PME</option>
+                <option value="rachat">Rachat de Crédits</option>
+                <option value="travaux">Prêt Travaux &amp; Énergie</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formAmount" data-i18n="f_amount">Montant souhaité (€) *</label>
+              <input type="number" id="formAmount" name="Montant_Souhaite_EUR" class="form-control" min="1000" max="1000000" step="100" value="18000" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formDuration" data-i18n="f_duration">Durée souhaitée (mois) *</label>
+              <input type="number" id="formDuration" name="Duree_Mois" class="form-control" min="6" max="300" value="60" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formFullName" data-i18n="f_fullname">Nom et Prénom complets *</label>
+              <input type="text" id="formFullName" name="Nom_Complet" class="form-control" placeholder="Ex : Jean-Marc Dupont" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail" data-i18n="f_email">Adresse e-mail personnelle ou pro *</label>
+              <input type="email" id="formEmail" name="Email" class="form-control" placeholder="exemple@domaine.fr" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formPhone" data-i18n="f_phone">Téléphone / WhatsApp (avec indicatif pays) *</label>
+              <input type="tel" id="formPhone" name="Telephone" class="form-control" placeholder="+33 6 12 34 56 78" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formCountry" data-i18n="f_country">Pays de résidence (Union Européenne) *</label>
+              <select id="formCountry" name="Pays_Residence" class="form-control" required>
+                <option value="France">France</option>
+                <option value="Belgique">Belgique / België</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Allemagne">Deutschland (Allemagne)</option>
+                <option value="Espagne">España (Espagne)</option>
+                <option value="Italie">Italia (Italie)</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Pays-Bas">Nederland (Pays-Bas)</option>
+                <option value="Irlande">Ireland / Éire</option>
+                <option value="Autriche">Österreich (Autriche)</option>
+                <option value="Pologne">Polska (Pologne)</option>
+                <option value="Roumanie">România (Roumanie)</option>
+                <option value="Grèce">Ελλάδα (Grèce)</option>
+                <option value="Chypre">Κύπρος (Chypre)</option>
+                <option value="Tchéquie">Česko (Tchéquie)</option>
+                <option value="Hongrie">Magyarország (Hongrie)</option>
+                <option value="Suède">Sverige (Suède)</option>
+                <option value="Danemark">Danmark (Danemark)</option>
+                <option value="Finlande">Suomi (Finlande)</option>
+                <option value="Slovaquie">Slovensko (Slovaquie)</option>
+                <option value="Bulgarie">България (Bulgarie)</option>
+                <option value="Croatie">Hrvatska (Croatie)</option>
+                <option value="Lituanie">Lietuva (Lituanie)</option>
+                <option value="Slovénie">Slovenija (Slovénie)</option>
+                <option value="Lettonie">Latvija (Lettonie)</option>
+                <option value="Estonie">Eesti (Estonie)</option>
+                <option value="Malte">Malta</option>
+                <option value="Autre Europe / International">Autre pays européen / International</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formCity" data-i18n="f_city">Ville et Code postal *</label>
+              <input type="text" id="formCity" name="Ville_Code_Postal" class="form-control" placeholder="Ex : 75016 Paris" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formProfession" data-i18n="f_profession">Profession / Statut professionnel *</label>
+              <input type="text" id="formProfession" name="Profession" class="form-control" placeholder="Ex : Cadre salarié, Indépendant, Fonctionnaire, Retraité..." required />
+            </div>
+
+            <div class="form-group">
+              <label for="formIncome" data-i18n="f_income">Revenu mensuel net estimé (€) *</label>
+              <input type="number" id="formIncome" name="Revenu_Mensuel_Net_EUR" class="form-control" min="500" step="50" placeholder="Ex : 2850" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="formMessage" data-i18n="f_message">Précisions sur votre projet (facultatif)</label>
+              <textarea id="formMessage" name="Message_Projet" class="form-control" placeholder="Décrivez brièvement votre besoin de financement ou vos disponibilités téléphoniques..."></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="consent-row">
+                <input type="checkbox" name="Consentement_RGPD" required checked />
+                <span data-i18n="f_consent">J'accepte que mes données soient traitées confidentiellement par Belvia Finance (Paris, France) pour l'étude gratuite et sans engagement de ma demande de crédit.</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-submit-wrap">
+            <button type="submit" id="creditSubmitBtn" class="btn btn-primary form-submit-btn">
+              <span data-i18n="btn_apply_credit">Demander un crédit</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+
+            <div class="form-security-badges">
+              <span>🔒 Chiffrement SSL 256-bit</span>
+              <span>🇫🇷 Étude à Paris sous 24h</span>
+              <span>🇪🇺 Conformité RGPD UE</span>
+              <span>✓ 0 € de frais d'étude</span>
+            </div>
+          </div>
+
+          <div id="formFeedbackBox" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11. QUESTIONS FRÉQUENTES (FAQ)
+       ===================================================================== -->
+  <section class="section section-white" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="faq_tag">QUESTIONS FRÉQUENTES</span>
+        <h2 class="section-title" data-i18n="faq_title">Vos questions sur nos prêts européens</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-question">
+            <span data-i18n="faq1_q">Qui peut demander un crédit chez Belvia Finance ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq1_a">
+            Tout résident majeur (salarié, fonctionnaire, indépendant, retraité ou dirigeant d'entreprise) résidant en France ou dans l'un des 27 pays de l'Union Européenne disposant d'une capacité de remboursement régulière.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faq2_q">Quel est le délai d'obtention d'une réponse et des fonds ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq2_a">
+            Dès réception de votre formulaire en ligne, notre comité d'étude à Paris vous transmet une réponse de principe sous 24 heures ouvrées. Après validation du contrat, le virement SEPA intervient sous 24 à 48 heures.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faq3_q">Y a-t-il des frais cachés ou d'ouverture de dossier ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq3_a">
+            Non. La simulation et l'étude de votre demande sont 100 % gratuites et sans engagement. Le TAEG fixe affiché inclut l'ensemble des conditions financières convenues au contrat.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faq4_q">Puis-je rembourser mon crédit par anticipation ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq4_a">
+            Oui, conformément à la réglementation européenne sur le crédit, vous pouvez effectuer un remboursement anticipé partiel ou total à tout moment sans pénalités.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span data-i18n="faq5_q">Dans quelles langues puis-je être accompagné ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer" data-i18n="faq5_a">
+            Notre plateforme et notre service client accompagnent les emprunteurs dans les 24 langues officielles de l'Union Européenne, avec traduction automatique instantanée.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       12. PIED DE PAGE COMPLET + ACCÈS DIRECT AUX 24 LANGUES DE L'UE
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <div class="brand-emblem">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M4 20H20M6 17V9M10 17V9M14 17V9M18 17V9M3 9L12 3L21 9H3Z" stroke="#DFB867" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <div class="brand-text-wrap notranslate">
+              <span class="brand-name" style="color:#fff;">BELVIA <span>FINANCE</span></span>
+              <span class="brand-sub" style="color:rgba(255,255,255,0.6);">Paris · Union Européenne</span>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;line-height:1.65;" data-i18n="footer_desc">
+            Institution européenne de prêt et de financement pour particuliers et professionnels. Siège social à Paris, France — Accompagnement multilingue dans toute l'Union Européenne.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="nav_solutions">Nos Crédits</h4>
+          <ul class="footer-links">
+            <li><a href="#credits" data-i18n="loan_personnel_title">Prêt Personnel</a></li>
+            <li><a href="#credits" data-i18n="loan_immobilier_title">Crédit Immobilier</a></li>
+            <li><a href="#credits" data-i18n="loan_auto_title">Crédit Auto &amp; Éco-Mobilité</a></li>
+            <li><a href="#credits" data-i18n="loan_pro_title">Prêt Professionnel &amp; PME</a></li>
+            <li><a href="#credits" data-i18n="loan_rachat_title">Rachat de Crédits</a></li>
+            <li><a href="#credits" data-i18n="loan_travaux_title">Prêt Travaux &amp; Énergie</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="nav_about">Siège en France</h4>
+          <ul class="footer-links">
+            <li data-inst="address">88 Avenue Kléber, 75116 Paris, France</li>
+            <li><a href="tel:+33186954210" data-inst="phone">+33 1 86 95 42 10</a></li>
+            <li><a href="mailto:contact@belvia-finance.eu" data-inst="email">contact@belvia-finance.eu</a></li>
+            <li data-inst="hours">Lun – Sam : 08h30 – 19h30</li>
+            <li style="margin-top:8px;">
+              <a href="#demander-credit" class="btn btn-primary" style="padding:9px 18px;font-size:0.82rem;color:#fff;" data-i18n="btn_apply_credit">Demander un crédit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="lang_auto_label">24 Langues Officielles UE</h4>
+          <p style="font-size:0.8rem;opacity:0.75;">Cliquez pour basculer instantanément :</p>
+          <div class="footer-eu-langs" id="footerEuLangs"></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="topbar_legal" style="color:var(--gold-400);font-weight:600;">
+          Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.
+        </p>
+        <p>
+          © 2026 <strong class="notranslate">Belvia Finance S.A.S.</strong> (<span data-inst="reg">RCS Paris B 894 512 730</span>) — <span data-i18n="footer_rights">Tous droits réservés.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton flottant rapide « Demander un crédit » au défilement -->
+  <a href="#demander-credit" class="btn btn-primary floating-apply-cta" id="floatingApplyCta">
+    <span data-i18n="btn_apply_credit">Demander un crédit</span>
+  </a>
+
+  <!-- =====================================================================
+       MODALE 1 : SÉLECTEUR DES 24 LANGUES OFFICIELLES DE L'UNION EUROPÉENNE
+       ===================================================================== -->
+  <div class="modal-backdrop" id="langModal" role="dialog" aria-modal="true" aria-labelledby="langModalHeading">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="langModalHeading" data-i18n="lang_modal_title">Choisissez votre langue officielle de l'Union Européenne</h3>
+          <small style="color:rgba(255,255,255,0.75);" data-i18n="lang_modal_sub">Traduction instantanée automatique détectée selon votre navigateur</small>
+        </div>
+        <button type="button" class="modal-close" data-close-modal="langModal" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal-body">
+        <input type="search" id="langSearchInput" class="form-control lang-search-input" placeholder="Rechercher une langue européenne (Français, Deutsch, Español, Polski, Ελληνικά...)" />
+        <div class="eu-lang-grid" id="euLanguagesGrid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MODALE 2 : TABLEAU D'AMORTISSEMENT COMPLET
+       ===================================================================== -->
+  <div class="modal-backdrop" id="amortModal" role="dialog" aria-modal="true" aria-labelledby="amortModalHeading">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="amortModalHeading" data-i18n="sim_amort_btn">Échéancier d'amortissement détaillé</h3>
+        <button type="button" class="modal-close" data-close-modal="amortModal" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal-body">
+        <table class="amort-table">
+          <thead>
+            <tr>
+              <th>Mois</th>
+              <th>Mensualité</th>
+              <th>Capital amorti</th>
+              <th>Intérêts</th>
+              <th>Capital restant</th>
+            </tr>
+          </thead>
+          <tbody id="amortTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MODALE 3 : AJOUTER UN TÉMOIGNAGE CLIENT
+       ===================================================================== -->
+  <div class="modal-backdrop" id="addReviewModal" role="dialog" aria-modal="true" aria-labelledby="addRevHeading">
+    <div class="modal-dialog" style="max-width:560px;">
+      <div class="modal-header">
+        <h3 id="addRevHeading" data-i18n="rev_add_btn">Partager mon avis client Belvia Finance</h3>
+        <button type="button" class="modal-close" data-close-modal="addReviewModal" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="newReviewForm" class="form-grid">
+          <div class="form-group">
+            <label>Nom &amp; Prénom *</label>
+            <input type="text" name="name" class="form-control" placeholder="Ex : Claire Moreau" required />
+          </div>
+          <div class="form-group">
+            <label>Ville &amp; Pays *</label>
+            <input type="text" name="city" class="form-control" placeholder="Ex : Marseille, France" required />
+          </div>
+          <div class="form-group">
+            <label>Code Pays UE (2 lettres)</label>
+            <input type="text" name="country" class="form-control" maxlength="2" value="FR" required />
+          </div>
+          <div class="form-group">
+            <label>Type de crédit obtenu</label>
+            <select name="category" class="form-control">
+              <option value="personnel">Prêt Personnel</option>
+              <option value="immobilier">Crédit Immobilier</option>
+              <option value="auto">Crédit Auto</option>
+              <option value="professionnel">Prêt Professionnel</option>
+              <option value="rachat">Rachat de Crédits</option>
+              <option value="travaux">Prêt Travaux</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label>Montant financé (€)</label>
+            <input type="text" name="amount" class="form-control" placeholder="Ex : 25 000 €" required />
+          </div>
+          <div class="form-group full-width">
+            <label>Votre témoignage *</label>
+            <textarea name="quote" class="form-control" placeholder="Racontez votre expérience avec Belvia Finance..." required></textarea>
+          </div>
+          <div class="form-group full-width">
+            <button type="submit" class="btn btn-primary" style="width:100%;">Publier mon avis</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts Belvia Finance (100 % HTML / CSS / JavaScript pur) -->
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Pont optionnel Google Website Translator (pour tout contenu libre ajouté ultérieurement) -->
+  <script>
+    function googleTranslateElementInit() {
+      if (window.google && window.google.translate) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: "fr",
+            includedLanguages: "bg,cs,da,de,el,en,es,et,fi,fr,ga,hr,hu,it,lt,lv,mt,nl,pl,pt,ro,sk,sl,sv",
+            autoDisplay: false
+          },
+          "google_translate_element"
+        );
+      }
+    }
+  </script>
+  <script async defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
